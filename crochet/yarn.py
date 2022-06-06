@@ -4,6 +4,10 @@ from typing import Literal
 
 @dataclass
 class Weight:
+    """
+    Class to represent a yawns weight.
+    Acceptable metrics are 'yards' and 'grams'
+    """
     amount: float
     unit: Literal['yards', 'grams'] = 'yards'
     _units = ['yards', 'grams']
@@ -15,6 +19,9 @@ class Weight:
 
 @dataclass
 class Yarn:
+    """
+    Class to represent yarn
+    """
     brand: str
     color: str
     weight: Weight
