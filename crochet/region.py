@@ -13,7 +13,3 @@ class Region:
     def __post_init__(self):
         if self.region not in self._regions:
             raise ValueError(f'Region must be one of: {", ".join(str(x) for x in self._regions)}')
-
-
-if __name__ == '__main__':
-    print(Region('UL'))
