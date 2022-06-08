@@ -1,5 +1,4 @@
 from dataclasses import dataclass
-from typing import Literal
 
 
 @dataclass
@@ -9,7 +8,7 @@ class Weight:
     Acceptable metrics are 'yards' and 'grams'
     """
     amount: float
-    unit: Literal['yards', 'grams'] = 'yards'
+    unit: str = 'yards'
     _units = ['yards', 'grams']
 
     def __post_init__(self):
