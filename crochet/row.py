@@ -4,7 +4,7 @@ from stitch import Stitch
 
 
 @dataclass
-class RowSequence:
+class RowElement:
     """
     A class to represent a stitch and quantity
     """
@@ -22,5 +22,5 @@ if __name__ == '__main__':
     from region import Region
 
     stitch = StitchDatabase().load_stitch(id=1, region=Region('UK'))
-    row_sequence = RowSequence(stitch, 5, False)
+    row_sequence = RowElement(stitch, 5, False)
     print(row_sequence)
