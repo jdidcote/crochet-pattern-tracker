@@ -1,0 +1,43 @@
+id,term,symbol,region
+1,Chain,c,US
+2,Slip Stitch,ss,US
+3,Back Loop,bl,US
+4,Front Loop,fl,US
+5,Chain Space,csp,US
+6,Single Crochet,sc,US
+7,Half Double Crochet,hdc,US
+8,Double Crochet,dc,US
+9,Treble Crochet,tr,US
+10,Double Treble,dtr,US
+11,Back Post Double Crochet,bpdc ,US
+12,Front Post Double Crochet,fpdc ,US
+13,Single Two Together,sc2tog ,US
+14,Double Two Together,dc2tog,US
+15,Skip,sk ,US
+16,Yarn Over,yo,US
+17,Magic Circle,Magic Circle,US
+18,Bobble Stitch,Bobble Stitch,US
+19,V-Stitch,V-Stitch,US
+20,Popcorn Stitch,Popcorn Stitch,US
+21,Puff Stitch,Puff Stitch,US
+1,Chain,c,UK
+2,Slip Stitch,ss,UK
+3,Back Loop,bl,UK
+4,Front Loop,fl,UK
+5,Chain Space,csp,UK
+6,Double Crochet,dc,UK
+7,Half Treble Crochet,htc,UK
+8,Treble Crochet,tr,UK
+9,Double Treble,dtr,UK
+10,Triple Treble,ttr,UK
+11,Raised Treble Back,rtrb ,UK
+12,Raised Treble Front,rtrf ,UK
+13,Double Two Together,dc2tog,UK
+14,Treble Two Together,tr2tog,UK
+15,Miss,m,UK
+16,Yarn Over Hook,yoh ,UK
+17,Magic Loop,Magic Loop,UK
+18,Bobble Stitch,Bobble Stitch,UK
+19,V-Stitch,V-Stitch,UK
+20,Popcorn Stitch,Popcorn Stitch,UK
+21,,,UK
