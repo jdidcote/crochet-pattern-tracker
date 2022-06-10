@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+from typing import List
 
 from stitch import Stitch
 
@@ -17,10 +18,28 @@ class RowElement:
             raise ValueError("Number of stitches must be positive")
 
 
+@dataclass
+class Row:
+    row_elements: List[RowElement] = None
+    row_complete: bool = False
+
+    def __post_init__(self):
+        if self.row_elements is None:
+            self.row_elements = []
+
+
 if __name__ == '__main__':
+    import random
+
     from database import StitchDatabase
     from region import Region
 
-    stitch = StitchDatabase().load_stitch(id=1, region=Region('UK'))
-    row_sequence = RowElement(stitch, 5, False)
-    print(row_sequence)
+    row_seqs = []
+    for i in range(5):
+        stitch = StitchDatabase().load_stitch(id=i, region=Region('UK'))
+        row_seqs.append(
+            RowElement(stitch, random.randrange(6), False)
+        )
+
+    new_row = Row()
+    new_row.add_element(row_seqs[0])
